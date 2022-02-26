@@ -25,6 +25,9 @@ namespace PopeyeJar.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Brand")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Capacity")
                         .HasColumnType("nvarchar(max)");
 

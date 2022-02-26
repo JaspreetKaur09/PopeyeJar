@@ -20,8 +20,15 @@ namespace PopeyeJar.Controllers
         }
 
         // GET: Jars
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
+            var jars = from j in _context.Jar
+                       select j;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                jars = jars.Where(s => s.Brand
+                .Contains(searchString));
+            }
             return View(await _context.Jar.ToListAsync());
         }
 
