@@ -9,12 +9,16 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<form asp-controller="Jars" asp-action="Index">
+    <p>
+        Material: <input type="text" name="SearchString" />
+        <input type="submit" value="Search" />
+    </p>
+</form>
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Brand)
-            </th>
+          
             <th>
                 @Html.DisplayNameFor(model => model.Colour)
             </th>

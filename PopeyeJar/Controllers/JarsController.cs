@@ -26,7 +26,7 @@ namespace PopeyeJar.Controllers
                        select j;
             if (!String.IsNullOrEmpty(searchString))
             {
-                jars = jars.Where(s => s.Brand
+                jars = jars.Where(s => s.Material
                 .Contains(searchString));
             }
             return View(await _context.Jar.ToListAsync());
