@@ -28,6 +28,7 @@ namespace PopeyeJar.Models
                         Shape = "Round",
                         Capacity = "5 quarts",
                         Rating = 2
+                        
                     },
                     new Jar
                     {
