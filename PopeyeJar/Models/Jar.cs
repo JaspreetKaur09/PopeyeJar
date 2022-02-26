@@ -9,14 +9,19 @@ namespace PopeyeJar.Models
     {
         public int Id { get; set; }
 
+        
         public string Colour { get; set; }
 
+        
         public string Material { get; set; }
 
+      
         public string Shape { get; set; }
 
+        
         public string Capacity { get; set; }
 
+        
         public int Rating { get; set; }
     }
 }
