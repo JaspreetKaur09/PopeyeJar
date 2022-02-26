@@ -22,7 +22,7 @@ namespace PopeyeJar.Models
                 context.Jar.AddRange(
                     new Jar
                     {
-                        Brand="Hacob",
+                        
                         Colour = "Purple",
                         Material = "Ceramic",
                         Shape = "Round",
@@ -31,7 +31,7 @@ namespace PopeyeJar.Models
                     },
                     new Jar
                     {
-                        Brand = "Fox Run",
+                        
                         Colour = "Clear",
                         Material = "Glass",
                         Shape = "Pineapple",
@@ -40,7 +40,7 @@ namespace PopeyeJar.Models
                     },
                     new Jar
                     {
-                        Brand = "Barnyard",
+                        
                         Colour = "Yellow",
                         Material = "Ceramic",
                         Shape = "Hive",
@@ -49,7 +49,7 @@ namespace PopeyeJar.Models
                     },
                     new Jar
                     {
-                        Brand = "Fox Run",
+                        
                         Colour = "Silver",
                         Material = "Silver",
                         Shape = "Square",
@@ -58,7 +58,7 @@ namespace PopeyeJar.Models
                     },
                     new Jar
                     {
-                        Brand = "Home Basics",
+                       
                         Colour = "Pink",
                         Material = "Ceramic",
                         Shape = "Butterfly",
@@ -67,7 +67,7 @@ namespace PopeyeJar.Models
                     },
                     new Jar
                     {
-                        Brand = "Hacob",
+                        
                         Colour = "Brown",
                         Material = "Wood",
                         Shape = "EGG",
@@ -76,7 +76,7 @@ namespace PopeyeJar.Models
                     },
                     new Jar
                     {
-                        Brand = "Reston",
+                        
                         Colour = "Mustard",
                         Material = "Plastic",
                         Shape = "Cylinder",
@@ -85,7 +85,7 @@ namespace PopeyeJar.Models
                     },
                     new Jar
                     {
-                        Brand = "Apex",
+                        
                         Colour = "White",
                         Material = "Glass",
                         Shape = "Bird",
@@ -94,7 +94,7 @@ namespace PopeyeJar.Models
                     },
                     new Jar
                     {
-                        Brand = "Kotinara",
+                        
                         Colour = "Black",
                         Material = "Ceramic",
                         Shape = "Round",
@@ -103,7 +103,7 @@ namespace PopeyeJar.Models
                     },
                     new Jar
                     {
-                        Brand="Ocean Star",
+                        
                         Colour = "Grey",
                         Material = "Steel",
                         Shape = "Round",

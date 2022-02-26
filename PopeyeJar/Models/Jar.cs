@@ -9,8 +9,6 @@ namespace PopeyeJar.Models
     {
         public int Id { get; set; }
 
-        public string Brand { get; set; }
-
         public string Colour { get; set; }
 
         public string Material { get; set; }

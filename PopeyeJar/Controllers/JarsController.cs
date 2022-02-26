@@ -20,8 +20,12 @@ namespace PopeyeJar.Controllers
         }
 
         // GET: Jars
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index(string jarMaterial,string searchString)
         {
+            IQueryable<string> materialQuery = from m in _context.Jar
+                                            orderby m.Material
+                                            select m.Material;
+
             var jars = from j in _context.Jar
                        select j;
             if (!String.IsNullOrEmpty(searchString))
@@ -29,7 +33,18 @@ namespace PopeyeJar.Controllers
                 jars = jars.Where(s => s.Material
                 .Contains(searchString));
             }
-            return View(await _context.Jar.ToListAsync());
+
+            if (!string.IsNullOrEmpty(jarMaterial))
+            {
+                jars = jars.Where(x => x.Material == jarMaterial);
+            }
+
+            var jarMaterialVM = new JarMaterialViewModel
+            {
+                Material = new SelectList(await materialQuery.Distinct().ToListAsync()),
+                Jars = await jars.ToListAsync()
+            };
+            return View(jarMaterialVM);
         }
 
         // GET: Jars/Details/5
